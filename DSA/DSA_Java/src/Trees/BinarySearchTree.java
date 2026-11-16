@@ -122,6 +122,7 @@ public class BinarySearchTree {
         return node;
     }
 
+
     public static void main(String[] args){
         Integer[] arr = {
                 50, 30, 70, 20, 40, 60, 80
