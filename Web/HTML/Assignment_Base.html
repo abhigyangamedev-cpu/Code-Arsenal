@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhigyan Dey | Profile</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h1>Abhigyan Dey</h1>
+            <p>This is about me, <strong>Abhigyan Dey</strong>. I am <em>learning web development</em>.</p>
+            <img src="https://wallpapers.com/images/thumbnail/handsome-anime-boy-mizuhara-riku-cg334vuuw3kudtay.jpg" alt="Photo of Abhigyan Dey" height="200">
+        </section>
+        <br>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Languages
+                    <ul>
+                        <li>Java</li>
+                        <li>C++</li>
+                    </ul>
+                </li>
+                <li>Game Dev
+                    <ul>
+                        <li>Unreal Engine</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Learning order</h3>
+            <ol>
+                <li>HTML and CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+            </ol>
+        </section>
+
+        <section id="dsa">
+            <h2>DSA progress</h2>
+            <table border="1">
+                <caption>My DSA progress</caption>
+                <thead>
+                    <tr>
+                        <th>Topic</th>
+                        <th>Problems solved</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Arrays and Two Pointers</td>
+                        <td>22</td>
+                        <td>Done</td>
+                    </tr>
+                    <tr>
+                        <td>Strings</td>
+                        <td>9</td>
+                        <td>Done</td>
+                    </tr>
+                    <tr>
+                        <td>Stacks and Queues</td>
+                        <td>6</td>
+                        <td>In progress</td>
+                    </tr>
+                    <tr>
+                        <td>Linked Lists</td>
+                        <td>25</td>
+                        <td>Done</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <a href="https://github.com/abhigyangamedev-cpu" target="_blank" rel="noopener">GitHub</a>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="/submit" method="POST">
+                <div>
+                    <label for="name">Name</label>
+                    <input id="name" type="text" name="name" required>
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" placeholder="you@example.com" required>
+                </div>
+
+                <fieldset>
+                    <legend>Purpose</legend>
+                    <label for="hiring">Hiring</label>
+                    <input id="hiring" type="radio" name="purpose" value="hiring">
+                    <label for="freelance">Freelance</label>
+                    <input id="freelance" type="radio" name="purpose" value="freelance">
+                    <label for="other">Other</label>
+                    <input id="other" type="radio" name="purpose" value="other">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Interested in</legend>
+                    <label for="web">Web</label>
+                    <input id="web" type="checkbox" name="interest" value="web">
+                    <label for="apps">Apps</label>
+                    <input id="apps" type="checkbox" name="interest" value="apps">
+                    <label for="games">Games</label>
+                    <input id="games" type="checkbox" name="interest" value="games">
+                </fieldset>
+
+                <div>
+                    <label for="topic">Topic</label>
+                    <select id="topic" name="topic" required>
+                        <option value="">--choose--</option>
+                        <option value="job">Job opportunity</option>
+                        <option value="project">Project idea</option>
+                        <option value="chat">Just saying hi</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" cols="40"></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Abhigyan Dey. All rights reserved.</p>
+        </footer>
+    </main>
+</body>
+</html>
