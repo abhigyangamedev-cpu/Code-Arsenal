@@ -2,7 +2,7 @@ package Arrays.InventoryManagement;
 
 public class InventoryImplementation {
     public static void main(String[] args){
-        InventoryUtils inventory = new InventoryUtils();
+        InventoryUtils inventory = new InventoryUtils(101);
 
         inventory.insertProduct(101, "Laptop", 10, 55000);
         inventory.insertProduct(102, "Mouse", 20, 500);

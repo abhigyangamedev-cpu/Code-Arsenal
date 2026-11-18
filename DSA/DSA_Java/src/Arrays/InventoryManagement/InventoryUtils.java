@@ -1,8 +1,15 @@
 package Arrays.InventoryManagement;
 
 public class InventoryUtils {
-    Product[] inventory = new Product[100];
+    Product[] inventory;
     int size = 0;
+
+    public InventoryUtils() {this(100);}
+
+    public InventoryUtils(int capacity) {
+        if (capacity <= 0) throw new IllegalArgumentException("Capacity must be positive");
+        inventory = new Product[capacity];
+    }
 
     void insertProduct(int productID, String productName, int quantity, double price){
 
@@ -115,7 +122,6 @@ public class InventoryUtils {
             }
         }
     }
-
 
     void displayProducts(){
 

@@ -1,0 +1,138 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCamp | Learn to Build</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <a href="#" class="logo">⚡ CodeCamp</a>
+        <nav class="nav-links">
+            <a href="#courses">Courses</a>
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle">Tracks ▾</a>
+                <div class="dropdown-menu">
+                    <a href="#">Frontend</a>
+                    <a href="#">Backend</a>
+                    <a href="#">DSA in Java</a>
+                </div>
+            </div>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact" class="btn btn-small">Join now</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Learn to build the web</h1>
+                <p>Short, hands-on courses in HTML, CSS and Java. Start free today.</p>
+                <a href="#courses" class="btn">Browse courses</a>
+            </div>
+        </section>
+
+        <section id="courses" class="section">
+            <h2>Popular courses</h2>
+            <div class="course-grid">
+                <article class="card">
+                    <span class="badge">SALE</span>
+                    <img src="https://picsum.photos/id/0/600/400" alt="Laptop on a desk">
+                    <div class="card-body">
+                        <h3>HTML and CSS Basics</h3>
+                        <p>Build and style your first pages.</p>
+                        <p class="price">₹299 <s>₹599</s></p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://picsum.photos/id/180/600/400" alt="Notebook and laptop">
+                    <div class="card-body">
+                        <h3>Flexbox and Grid</h3>
+                        <p>Lay out any page with confidence.</p>
+                        <p class="price">₹399</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://picsum.photos/id/2/600/400" alt="Coding on a laptop">
+                    <div class="card-body">
+                        <h3>DSA in Java</h3>
+                        <p>Arrays to graphs, one problem at a time.</p>
+                        <p class="price">₹499</p>
+                    </div>
+                </article>
+            </div>
+            <div class="loading">
+                <div class="spinner"></div>
+                <span>Loading more courses…</span>
+            </div>
+        </section>
+
+        <section class="section features">
+            <div class="feature">
+                <h3>Project based</h3>
+                <p>Every course ends with something you built.</p>
+            </div>
+            <div class="feature">
+                <h3>Self paced</h3>
+                <p>Learn on your own schedule, on any device.</p>
+            </div>
+            <div class="feature">
+                <h3>Notes included</h3>
+                <p>Clear notes and quizzes for every lesson.</p>
+            </div>
+        </section>
+
+        <section id="reviews" class="section">
+            <h2>What students say</h2>
+            <div class="reviews-box">
+                <blockquote>"The Grid lessons finally made layouts click for me." – Riya</blockquote>
+                <blockquote>"Short lessons I can finish between classes." – Arjun</blockquote>
+                <blockquote>"The projects are what got me my first freelance job." – Meera</blockquote>
+                <blockquote>"Clear notes, no fluff. Exactly what I needed." – Kabir</blockquote>
+                <blockquote>"The DSA track helped me in placement interviews." – Sana</blockquote>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Join the next batch</h2>
+            <form class="contact-form" action="#" method="POST">
+                <label for="name">Name</label>
+                <input id="name" type="text" name="name" required>
+
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" placeholder="you@example.com" required>
+
+                <label for="track">Track</label>
+                <select id="track" name="track" required>
+                    <option value="">Choose a track</option>
+                    <option value="frontend">Frontend</option>
+                    <option value="backend">Backend</option>
+                    <option value="dsa">DSA in Java</option>
+                </select>
+
+                <button type="submit" class="btn">Sign up</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <h4>CodeCamp</h4>
+            <p>Learn by building.</p>
+        </div>
+        <div>
+            <h4>Courses</h4>
+            <a href="#">Frontend</a>
+            <a href="#">Backend</a>
+            <a href="#">DSA in Java</a>
+        </div>
+        <div>
+            <h4>Contact</h4>
+            <a href="mailto:hello@codecamp.dev">hello@codecamp.dev</a>
+        </div>
+        <p class="copyright">&copy; 2026 CodeCamp. All rights reserved.</p>
+    </footer>
+</body>
+</html>
