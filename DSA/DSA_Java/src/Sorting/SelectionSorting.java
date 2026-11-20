@@ -10,20 +10,15 @@ public class SelectionSorting {
     }
 
     public static void selectionSort(int[] arr){
-
-        for(int i = 0; i < arr.length - 1; i++){
-            // Assuming i index as min value index
-            int min_index = i;
-
-            // Finding the min value index
+        for(int i = 0; i < arr.length; i++){
+            int minValIndex = i;
             for(int j = i + 1; j < arr.length; j++){
-                if(arr[j] < arr[min_index]) min_index = j;
+                if(arr[j] < arr[minValIndex]) minValIndex = j;
             }
 
-            // Swapping the i index with the min value index
             int temp = arr[i];
-            arr[i] = arr[min_index];
-            arr[min_index] = temp;
+            arr[i] = arr[minValIndex];
+            arr[minValIndex] = temp;
         }
     }
 
